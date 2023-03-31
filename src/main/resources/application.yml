@@ -1,0 +1,25 @@
+server:
+  # ??
+  port: 8091
+
+spring:
+
+  # JSP
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  # Reload
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+  # DB
+  datasource:
+    url: jdbc:mysql://localhost:3306/sns
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
